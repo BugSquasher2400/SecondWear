@@ -1,0 +1,43 @@
+main .container {
+  display: flex;
+  align-items: center; /* 세로 정렬 */
+  justify-content: center; /* 가로 정렬 (선택 사항) */
+  min-height: 900px;
+}
+
+main .content > p {
+  color: #fff;
+}
+
+main .content > button {
+  width: 150px;
+  height: 40px;
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+main .content > .header > h1 {
+  display: inline-block;
+  color: #fff;
+  margin: 0px 20px;
+}
+
+main .content > .header > p {
+  display: inline-block;
+  color: #fff;
+  margin: 20px 80px;
+}
+
+main .content > .posInfo {
+  display: flex;
+  margin-top: 100px;
+}
+
+.posInfo .left {
+}
+
+.posInfo .right {
+  margin-left: 40px;
+  color: #fff;
+  text-align: left;
+}

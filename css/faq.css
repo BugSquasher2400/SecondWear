@@ -1,0 +1,42 @@
+main .container {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 900px;
+}
+
+main .content {
+  color: #fff;
+  background-color: #161616;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+main .content > .faq {
+  list-style: none;
+  text-align: left;
+  padding: 0px;
+}
+
+main .content .titleBox {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+}
+
+main .content .titleBox .view {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* FAQ 오픈일때  */
+main .content .item view {
+  display: block;
+}
+
+/* FAQ 닫힐때  */
+main .content .titleBox .view-close {
+  height: 0px;
+  background-color: red;
+}
