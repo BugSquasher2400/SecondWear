@@ -11,19 +11,24 @@ main .content {
   box-sizing: border-box;
 }
 
-main .content > .faq {
+main .content > .faq-list {
   list-style: none;
   text-align: left;
   padding: 0px;
 }
 
-main .content .titleBox {
+main .content .faq-header {
   display: flex;
-  justify-content: space-between;
+    align-items: center; /* 자식 요소들을 세로 가운데 정렬 */
+    justify-content: space-between; /* 좌우로 여백을 균등하게 분배 */
   border-bottom: 1px solid gray;
 }
 
-main .content .titleBox .view {
+main .content .faq-header .faq-title {
+  cursor: pointer;
+}
+
+main .content .faq-header .faq-toggle {
   color: #fff;
   text-decoration: none;
   font-size: 1.2rem;
@@ -31,13 +36,16 @@ main .content .titleBox .view {
 }
 
 /* FAQ 오픈일때  */
-main .content .item view {
-  display: block;
+
+
+.faq-content {
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.5s;
 }
 
-/* FAQ 닫힐때  */
-main .item .view-close {
-  display: none;
-  height: 0px;
-  background-color: red;
+.faq-content.open {
+  height: auto;
+  overflow: auto;
 }
+
