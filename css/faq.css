@@ -36,7 +36,8 @@ main .content .item view {
 }
 
 /* FAQ 닫힐때  */
-main .content .titleBox .view-close {
+main .item .view-close {
+  display: none;
   height: 0px;
   background-color: red;
 }
