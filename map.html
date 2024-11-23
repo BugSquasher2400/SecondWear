@@ -10,7 +10,7 @@
     <title>헌옷수거함 지도표시</title>
     <script
       type="text/javascript"
-      src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=&submodules=geocoder"
+      src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=0d3c18w7fb&submodules=geocoder"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
   </head>
@@ -25,8 +25,7 @@
       });
 
       //클래스는 지도 위에 정보를 정의 (마커)
-      var infoWindow = new naver.maps.InfoWindow({
-      });
+      var infoWindow = new naver.maps.InfoWindow({});
 
       // 공공데이터 가져오기
       fetch("./data/open_data.csv")

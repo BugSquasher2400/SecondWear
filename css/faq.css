@@ -1,7 +1,6 @@
 main .container {
   width: 100%;
   max-width: 1200px;
-  min-height: 900px;
 }
 
 main .content {
@@ -19,8 +18,8 @@ main .content > .faq-list {
 
 main .content .faq-header {
   display: flex;
-    align-items: center; /* 자식 요소들을 세로 가운데 정렬 */
-    justify-content: space-between; /* 좌우로 여백을 균등하게 분배 */
+  align-items: center; /* 자식 요소들을 세로 가운데 정렬 */
+  justify-content: space-between; /* 좌우로 여백을 균등하게 분배 */
   border-bottom: 1px solid gray;
 }
 
@@ -37,7 +36,6 @@ main .content .faq-header .faq-toggle {
 
 /* FAQ 오픈일때  */
 
-
 .faq-content {
   height: 0px;
   overflow: hidden;
@@ -48,4 +46,3 @@ main .content .faq-header .faq-toggle {
   height: auto;
   overflow: auto;
 }
-
